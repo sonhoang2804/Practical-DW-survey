@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="container">
-    <h1>survey</h1>
+    <h1>School Survey</h1>
     <form action="{{url("/save-feedback")}}" method="post">
         @method("POST")
         @csrf
