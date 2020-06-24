@@ -7,6 +7,7 @@ use App\Category;
 use App\Author;
 use App\Feedback;
 use App\User;
+use App\Users;
 use Illuminate\Http\Request;
 
 class Webcontroller extends Controller
@@ -22,7 +23,7 @@ class Webcontroller extends Controller
             "feedback"=>"required|min:4"
         ]);
         try{
-            Feedback::create([
+            Users::create([
                 "name"=>$request->get("name"),
                 "email"=>$request->get("email"),
                 "phone"=>$request->get("phone"),
